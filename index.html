@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strange Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <div class="content">
+        <div class="banner" id="banner">
+            <div class="banner-title">Provocation 1 -
+              <br>
+               Strange weather</div>
+            <div class="banner-subtitle">By Brenton Larsen</div>
+         </div>
+
+            <button class="button" id="but" onclick="darkmode()">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/004/641/030/small/simple-yellow-sun-illustration-on-white-background-creative-icon-vector.jpg" alt="sun image" id="dmbutton">
+            </button>
+
+            <script>
+              function darkmode() {
+                 var element = document.body;
+                 var img = document.getElementById("dmbutton");
+                 element.classList.toggle("dark-mode");
+                 if (element.classList.contains("dark-mode")) {
+                    img.src = "https://img.freepik.com/free-vector/natural-golden-crescent-moon-stars-dark-background_1017-51979.jpg?size=626&ext=jpg"; // Moon icon for dark mode
+                    img.alt = "moon image";
+                } else {
+                    img.src = "https://static.vecteezy.com/system/resources/thumbnails/004/641/030/small/simple-yellow-sun-illustration-on-white-background-creative-icon-vector.jpg"; // Sun icon for light mode
+                    img.alt = "sun image";
+                }
+              }
+           </script>
+
+  <div class="introduction-card" id="introductionImage1">
+    <img class="introduction-images" id="intro-img1" src="https://freight.cargo.site/w/700/q/75/i/56e7fd533e059e238859dbfe256d88cac25cfaea9153e0797940c5a4be2a897b/Rebecca-Najdowski_Ambient-Pressure-9.jpg" alt="image1">
+    <div class="introduction-images-blurb" id="intro-blurb ">This is the blurb for tm1</div>
+  </div>
+  <div class="introduction-card" id="introductionImage2">
+    <img class="introduction-images" id="intro-img2" src="https://freight.cargo.site/w/1500/q/75/i/4e32e66dc514d9fdb9b4d3fa8de01b35e685090070e6d1f0d9001d5a6cebcd3b/Rebecca-Najdowski_Ambient-Pressure-22.jpg" alt="image2">
+    <div class="introduction-images-blurb" id="intro-blurb2">22222222222222 blurb</div>
+  </div>
+  <div class="introduction-card" id="introductionImage3">
+    <img class="introduction-images" id="intro-img3" src="https://artlogic-res.cloudinary.com/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto:low/artlogicstorage/maddoxgallery/images/view/5ed30b7c498a692523d06f856b0971b1j.jpg" alt="image3">
+    <div class="introduction-images-blurb" id="intro-blurb3">intro blurb 333333333333333333</div>
+  </div>
+
+  <div class="paragraph1" id="p1">In these examples its clear that artists are attempting to create separate experiences of nature one that is organic and natural and one that has been edited to create an otherworldy experience. It can be argued that as society drifts further from nature the need to create more natural experiences that connects human to nature as opposed to separating them from it </div>
+
+  <div class="body-card" id="bodyimage1">
+    <img class="body-images" id="body-img1" src="https://venturebeat.com/wp-content/uploads/2023/04/annevb_data_and_the_environment_nature_sustainability_detailed__aa07004b-67c4-4d43-adac-af727733e091.png?w=750" alt="image4">
+    <div class="body-blurb-1" id="bodyblurb">This is the titan body blulrb</div>
+  </div>
+
+  <div class="body-card" id="bodyimage2">
+    <div class="paragraph2" id="p2">this is the text that shows over the image in the body as humans move further from narture through technology those same devices that push away from it will also be what helps humanity regain there spiritual understanding of the universe and nature. Through these technologies people will be able to experience first hand the wonders of the universe and be immersed in nature anywhere at any point in time. </div>
+  </div>
+
+  <div class="body-card" id="bodyimage3">
+    <img class="body-images" id="bodyimage3" src="C:\Users\Brent\Downloads\Firefly add more technology such as vr headsets of the future 32714.jpg" alt="image6">
+    <div class="body-blurb-2" id="bodyblurb">this the the third body blurb i think </div>
+  </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --purple-background: #797596;
+    --pink-background: #D1C6AD;
+    --client-background: #7b4e75;
+}
+
+body {
+    max-width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 25px;
+}
+
+.content {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--white);
+    justify-content: center;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-image: url(https://freight.cargo.site/w/700/q/75/i/56e7fd533e059e238859dbfe256d88cac25cfaea9153e0797940c5a4be2a897b/Rebecca-Najdowski_Ambient-Pressure-9.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 200px;
+    
+}
+
+
+.banner-title {
+    font-size: 64px;
+    padding: 1rem;
+    text-align: left;
+    
+}
+
+.banner-subtitle {
+    font-size: 24px;
+    padding: 1rem;
+    text-align: end;
+    flex: 1;    
+}
+
+.button {
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+.button img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dark-mode {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+
+.introduction-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 300px;
+    align-items: center;
+}
+
+.introduction-images {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 5px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction-images-blurb {
+    padding: 0.5rem 0;
+    background-color: var(--purple-background);
+    color: var(--pink-background);
+    font-size: 16px;
+}
+
+.paragraph1 {
+    margin: 20px;
+    font-size: 24px;
+    color: var(--white);
+    background-color: var(--black);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.body-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-images {
+    width: 100%;
+    border-radius: 5px;
+    max-height: 800px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyblurb{
+    margin: 20px    ;
+    padding: 0.5rem 0;
+    background-color: var(--purple-background);
+    color: var(--pink-background);
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+  
+#bodyimage2 {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5ca9651a65a707e04a9c00ff/1554619174951-1JAB9MS2ZA08AX49NEVO/Edge_of_Observable_1.jpg?format=1500w");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 960px;
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.paragraph2 {
+    padding: 1rem;
+    text-align: left;
+}
+    
+
+#banner {
+    grid-area: b;
+}
+
+#button {
+    grid-area: but;
+}
+
+#introductionImage1 {
+    grid-area: ii1;
+}
+
+#introductionImage2 {
+    grid-area: ii2;
+}
+
+#introductionImage3 {
+    grid-area: ii3;
+}
+
+#p1 {
+    grid-area: p1;
+}
+
+#bodyimage1 {
+    grid-area: bi1;
+}
+
+#bodyimage2 {
+    grid-area: bi2;
+}
+
+#bodyimage3 {
+    grid-area: bi3;
+}
+
+
+
+/* Media Queries for Responsive Design */
+/*template for mobile phone*/
+@media (max-width:49.9em) {
+    .content {
+        overflow-x: hidden;
+        padding: 10px;
+        display: grid;
+        grid-template: 
+        "b" minmax(8em, auto)
+        "ii1" minmax(8em, auto)
+        "ii2" minmax(8em, auto)
+        "ii3" minmax(8em, auto)
+        "p1" minmax(8em, auto)
+        "bi1" minmax(8em, auto)
+        "bi2" minmax(8em,auto)
+        "bi3" minmax(8em,auto);
+
+    
+    }
+    .banner{
+        align-items: left;
+        max-width: 100%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    .banner-subtitle {
+        font-size: 20px;
+        margin: 20px;
+    }
+    
+    .button img {
+        width: 30px;
+        height: 30px;
+    }
+    .paragraph1 {
+        font-size: 18px;
+    }
+
+    .introduction-card {
+        padding: 0.5rem;
+    }
+
+    .introduction-images {
+        max-width: 100%;
+        height: 225px;
+    }
+
+    .bodyimage3 {
+        justify-content: center;
+        align-items: center;
+    }
+}
+    
+/*template for tablet*/
+@media (min-width: 50em) and (max-width: 74.9em){
+    .content {
+        display: grid;
+        grid-template:
+        "b   b   b   b   b   b" minmax(8em, auto)
+        "ii1 ii1 ii1 ii2 ii2 ii2" minmax(8em, auto)
+        "ii3 ii3 ii3 ii3 ii3 ii3" minmax(8em, auto)
+        "p1  p1  p1  p1  p1  p1"  minmax(8em, auto)
+        "bi1 bi1 bi1 bi1 bi1 bi1" minmax(8em, auto)
+        "bi2 bi2 bi2 bi2 bi2 bi2" minmax(8em, auto)
+        "bi3 bi3 bi3 bi3 bi3 bi3" minmax(8em,auto);
+
+
+    }
+    .banner-title {
+        font-size: 32px;
+    }
+    
+    .banner-subtitle {
+        font-size: 22px;
+        margin: 20px;
+    }
+      
+    .button img {
+        width: 50px;
+        height: 50px;
+    }
+    .paragraph1 {
+        font-size: 20px;
+    }
+
+    .introduction-card {
+        padding: 0.75rem;
+    }
+
+    .introduction-images {
+        height: 262px;
+        height: auto;
+        max-height: 350px;
+        width: 100%;
+        object-fit: cover;       
+    }
+
+    
+    #introductionImage1 .introduction-images{
+        width: 100;
+        height: auto;
+    }
+
+    #introductionImage2 .introduction-images{
+        width: 100%;
+        height: auto;
+    }
+
+    #introductionImage3 .introduction-images{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/*template for desktop*/
+@media (min-width: 75em){
+    .content{
+        display:grid;
+        grid-template:
+        "b   b   b   b   b   b   b   b   b   b   b   b" minmax(8em, auto)
+        "ii1 ii1 ii1 ii1 ii1 ii2 ii2 ii2 ii2 ii3 ii3 ii3" minmax(8em, auto)
+        "p1  p1  p1  p1  p1  p1  p1  p1  p1  p1  p1  p1" minmax(8em, auto)
+        "bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1 bi1" minmax(8em, auto)
+        "bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2 bi2" minmax(8em, auto)
+        "bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3 bi3" minmax(8em, auto);
+
+    }
+
+    .introduction-images-blurb{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+   
+
+}
